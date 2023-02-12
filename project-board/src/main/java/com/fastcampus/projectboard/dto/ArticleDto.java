@@ -33,6 +33,7 @@ public record ArticleDto(
         );
     }
 
+    //dto 정보로부터 entity를 하나 만들어서 save 하는 메소드
     public Article toEntity() {
         return Article.of(
                 userAccountDto.toEntity(),
